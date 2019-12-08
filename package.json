@@ -1,0 +1,12 @@
+{
+  "name": "bot",
+  "version": "0.1.0",
+  "main": "main.js",
+  "repository": "https://github.com/okudas1806/bot.git",
+  "author": "<maxence1806@free.fr>",
+  "license": "MIT",
+  "description": "bot pour serveur rp",
+  "dependencies": {
+    "discord.js": "discordjs/discord.js"
+  }
+}
