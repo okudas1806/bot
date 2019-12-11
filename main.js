@@ -11,6 +11,15 @@ client.on("message", msg => {
   if (cmd === `${PREFIX}lol`) msg.channel.send("test!lol");
 });
 
+client.on("guildMemberAdd", member => {
+  member.send("salut a toi!");
+  const channel = client.channels.find(r => r.name === "général");
+  channel.send(`${member} a rejoint le serveur`);
+});
+
 client.login(TOKEN);
 
 client.on("ready", () => console.log("je suis pret!"));
+client.on("error", console.error);
+client.on("warn", console.warn);
+client.on("debug", console.log);
